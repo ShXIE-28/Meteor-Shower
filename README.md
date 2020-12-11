@@ -4,6 +4,8 @@ This dash will display the meteor shower observation records reported from amate
 
 There are three tabs in the dashboard.
 
+You only need to download app.py to run the dash.
+
 ```
 All data are from IMO (International Meteor Organization) and NASA.
 ```
