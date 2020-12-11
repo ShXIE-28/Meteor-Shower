@@ -20,13 +20,21 @@ bs = "https://stackpath.bootstrapcdn.com/bootswatch/4.5.2/sandstone/bootstrap.mi
 app = dash.Dash(__name__, external_stylesheets=[bs])
 sercer = app.server
 image = 'url(https://www.imo.net/members/upload/photos/2019/11631_1037.jpg)'
-dt = pd.read_csv('.\\dataset\\observor.csv',encoding='ISO-8859-1')
-date_list = pd.read_csv('.\\dataset\\date_list.csv')
-top20 = pd.read_csv('.\\dataset\\top20.csv')
-top10 = pd.read_csv('.\\dataset\\top10.csv')
-future = pd.read_csv('.\\dataset\\future.csv')
-zpic = pd.read_csv('.\\dataset\\zodiac pic.csv')
-hubble = pd.read_csv('.\\dataset\\hubble-birthdays-full-year.csv',encoding='ISO-8859-1')
+#dt = pd.read_csv('.\\dataset\\observor.csv',encoding='ISO-8859-1')
+#date_list = pd.read_csv('.\\dataset\\date_list.csv')
+#top20 = pd.read_csv('.\\dataset\\top20.csv')
+#top10 = pd.read_csv('.\\dataset\\top10.csv')
+#future = pd.read_csv('.\\dataset\\future.csv')
+#zpic = pd.read_csv('.\\dataset\\zodiac pic.csv')
+#hubble = pd.read_csv('.\\dataset\\hubble-birthdays-full-year.csv',encoding='ISO-8859-1')
+dt = pd.read_csv('https://raw.githubusercontent.com/ShXIE-28/Meteor-Shower/main/dataset/observor.csv',encoding='ISO-8859-1')
+date_list = pd.read_csv('https://raw.githubusercontent.com/ShXIE-28/Meteor-Shower/main/dataset/date_list.csv')
+top20 = pd.read_csv('https://raw.githubusercontent.com/ShXIE-28/Meteor-Shower/main/dataset/top20.csv')
+top10 = pd.read_csv('https://raw.githubusercontent.com/ShXIE-28/Meteor-Shower/main/dataset/top10.csv')
+future = pd.read_csv('https://raw.githubusercontent.com/ShXIE-28/Meteor-Shower/main/dataset/future.csv')
+zpic = pd.read_csv('https://raw.githubusercontent.com/ShXIE-28/Meteor-Shower/main/dataset/zodiac%20pic.csv')
+hubble = pd.read_csv('https://raw.githubusercontent.com/ShXIE-28/Meteor-Shower/main/dataset/hubble-birthdays-full-year.csv',encoding='ISO-8859-1')
+
 
 tab1 = dbc.Card(dbc.CardBody([
                 html.H4("Meteor Shower Observation Records",className='card-title'),
