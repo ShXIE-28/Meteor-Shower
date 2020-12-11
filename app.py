@@ -127,8 +127,6 @@ tab3 = dbc.Card(dbc.CardBody([
                  ])
     ]))
 
-
-
 tabs = dbc.Tabs([dbc.Tab(tab1,label='meteor tab',style={'width':'1150px'},
                          tab_style={"margin-left": "auto"}),
                  dbc.Tab(tab2,label='top list',style={'width':'1150px'}),
@@ -250,13 +248,13 @@ def create_tanble(list):
                     {'Name':{'value':'![2004 Perseid Meteor Shower](https://github.com/ShXIE-28/Meteor-Shower/blob/main/meteor%20pic/8-11-2004.jpg?raw=true)',
                             'type': 'markdown'}
                     },
-                    {'Name':{'value':'![2001 Leonid Meteor Storm](https://github.com/ShXIE-28/Meteor-Shower/blob/main/meteor%20pic/11-18-2001.jpg?raw=true)',
+                    {'Name':{'value':'![2001 Leonid Meteor Storm](https://github.com/ShXIE-28/Meteor-Shower/blob/main/meteor%20pic/11-18-2001.jpg?raw=true)',
                             'type': 'markdown'}
                     },
-                    {'Name':{'value':'![2010 Perseid Meteor Storm](https://github.com/ShXIE-28/Meteor-Shower/blob/main/meteor%20pic/8_12_2010.jpg?raw=true)',
+                    {'Name':{'value':'![2010 Perseid Meteor Shower](https://github.com/ShXIE-28/Meteor-Shower/blob/main/meteor%20pic/8_12_2010.jpg?raw=true)',
                             'type': 'markdown'}
                     },
-                    {'Name':{'value':'![2002 Leonid meteor storm](https://github.com/ShXIE-28/Meteor-Shower/blob/main/meteor%20pic/11_19_2002.jpg?raw=true)',
+                    {'Name':{'value':'![2002 Leonid Meteor Shower](https://github.com/ShXIE-28/Meteor-Shower/blob/main/meteor%20pic/11_19_2002.jpg?raw=true)',
                             'type': 'markdown'}
                     },
                 ],
@@ -267,8 +265,10 @@ def create_tanble(list):
                     'textDecoration': 'underline',
                     'textDecorationStyle': 'dotted',
                 }],
-                style_cell={'textAlign': 'center'},
+                style_cell={'minWidth':'180px','width':'180px',
+                            'maxWidth':'180px','textAlign':'center'},
                 style_as_list_view=True,
+                fixed_rows={'headers': True},
                 style_header={'backgroundColor': '#cad7e8','fontWeight': 'bold'},
                 style_table={'height': '400px', 'overflowY': 'auto'},
                 virtualization = True
